@@ -19,7 +19,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- map escape
-map({"i", "n"}, "jj", "<esc>", { remap = true })
+map({"i"}, "jj", "<esc>", { remap = true })
 
 -- better up/down
 map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
