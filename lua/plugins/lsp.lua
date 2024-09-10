@@ -84,6 +84,11 @@ return {
       },
       -- add any global capabilities here
       capabilities = {},
+      servers = {
+        clangd = {
+          mason = false,
+        }
+      },
       -- Automatically format on save
       -- autoformat = false,
       diagnostics = {
